@@ -5,7 +5,7 @@ import pickle
 import os
 
 if len(sys.argv) < 3:
-    print("Zbyt mało argumentow! Lub zbyt duzo argumentow! \n"
+    print("Zbyt mało argumentow! \n"
     "Poprawna forma: python3 nazwa_pliku_otwieranego plik_input plik_output zmiany")
     sys.exit()
 
@@ -54,7 +54,7 @@ def write_pickle(output_file, file_content):
 
 
 if not os.path.exists(input_file) or not os.path.exists(output_file):
-    print(f"Plik nie istnieje! Dostępne pliki w tym katalogu: {os.listdir()}")
+    print(f"Plik nie istnieje! Dostępne pliki w katalogu: {os.listdir()}")
     exit()
 
 
